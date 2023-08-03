@@ -11,3 +11,7 @@ def dfs(start):
 n, m = map(int, input().split())
 arr = []
 dfs(1)
+
+
+# 4 2
+# 12 13 14 23 24 34
