@@ -1,19 +1,17 @@
 n = int(input())
 for _ in range(n):
-  a = list(map(str, input()))
-  print(a)
-  while True :
-    if a[0] == ")" : 
-      print("NO")
-      break
-    else :
-      for j in range(1, len(a)):
-        if a[j] == ")":
-          a.pop(0)
-          a.pop(j)
-          print(a)
-          break
-    if len(a) == 0:
-      print("YES")
-      break
-    
+  str_list = list(map(str, input()))
+  stack = []
+  value = True
+  for s in str_list :
+    if s == "(":
+      stack.append(s)
+    elif s == ")":
+      if len(stack) == 0 or stack[-1] == ")" :
+        value = False
+        break
+      else :
+        stack.pop(-1)
+
+  if not value or len(stack) > 0 : print("NO")
+  else : print("YES")
