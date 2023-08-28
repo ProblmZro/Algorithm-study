@@ -9,4 +9,4 @@ for _ in range(N) :
   dic[site] = pwd
 
 for _ in range(M):
-  print(dic[input()])
+  print(dic[input().rstrip()])
