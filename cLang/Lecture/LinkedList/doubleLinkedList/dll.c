@@ -120,7 +120,7 @@ int sum_backward() {
   return sum;
 }
 
-void main()
+int main()
 {
 	init_list();
 	insert(0, 10);
@@ -130,6 +130,7 @@ void main()
 	insert(2, 50);
 	print_list("���߿��Ḯ��Ʈ�� ������ List(����x5)");
 	printf("sum : %d\n", sum_backward());
+	printf("sum : %d\n", sum_forward());
 
 	replace(2, 90);
 	print_list("���߿��Ḯ��Ʈ�� ������ List(��üx1)");
