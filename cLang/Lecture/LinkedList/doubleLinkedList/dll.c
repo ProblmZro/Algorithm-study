@@ -114,7 +114,7 @@ int sum_forward() {
 int sum_backward() {
   int sum = 0;
   Node* p = NULL;
-  for(p = get_head()->prev; p != get_head(); p = p->prev) {
+  for(p = get_entry(size() - 1); p != NULL; p = p->prev) {
     sum += p->data;
   }
   return sum;
