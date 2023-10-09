@@ -49,7 +49,7 @@ int check_matching(char expr[]) {
         if(((ch == ']') && !(a == '[')) || ((ch == ')') && !(a == '(')) || ((ch == '}') && !(a == '{'))) 
           return 3;}
   }
-  if(!is_empty()) return 1;
+  if(!is_empty()) return 1;25
   else return 0;
 }
 

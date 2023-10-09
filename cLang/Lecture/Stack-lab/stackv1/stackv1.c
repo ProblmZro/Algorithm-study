@@ -23,19 +23,19 @@ int is_full() {
 
 void push(int e) {
     if (is_full())
-        perror("½ºÅÃ Æ÷È­ ¿¡·¯");
+        perror("ìŠ¤íƒ í¬í™” ì—ëŸ¬");
     data[++top] = e;
 }
 
 int pop() {
     if(is_empty())
-        perror("½ºÅÃ °ø¹é ¿¡·¯");
+        perror("ìŠ¤íƒ ê³µë°± ì—ëŸ¬");
     return data[top--];
 }
 
 int peek() {
     if(is_empty())
-        perror("½ºÅÃ °ø¹é ¿¡·¯");
+        perror("ìŠ¤íƒ ê³µë°± ì—ëŸ¬");
     return data[top];
 }
 

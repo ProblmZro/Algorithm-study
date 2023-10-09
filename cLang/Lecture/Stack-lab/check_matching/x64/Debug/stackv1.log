@@ -1,7 +1,0 @@
-﻿  main.c
-C:\Users\oslab\source\repos\Stack\stackv1\main.c(72,9): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\oslab\source\repos\Stack\stackv1\main.c(78,24): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\oslab\source\repos\Stack\stackv1\main.c(79,24): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\oslab\source\repos\Stack\stackv1\main.c(80,24): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\oslab\source\repos\Stack\stackv1\main.c(81,24): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  stackv1.vcxproj -> C:\Users\oslab\source\repos\Stack\x64\Debug\stackv1.exe
