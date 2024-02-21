@@ -7,10 +7,10 @@ void main()
 	init_stack();
 	for (i = 1; i < 10; i++)
 		push(i);
-	print_stack("╫╨ец push 9х╦");
+	print_stack("Л┼╓М┐² push 9М ▄");
 	printf("\tpop() --> %d\n", pop());
 	printf("\tpop() --> %d\n", pop());
 	printf("\tpop() --> %d\n", pop());
-	print_stack("╫╨ец pop 3х╦");
+	print_stack("Л┼╓М┐² pop 3М ▄");
 }
 
