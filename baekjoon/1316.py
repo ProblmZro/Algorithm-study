@@ -9,7 +9,6 @@ for _ in range(n):
     if w not in word_list:
       word_list.append(w)
     elif w in word_list and word_list[-1] != w:
-      # print("!!")
       a -= 1
       break
   

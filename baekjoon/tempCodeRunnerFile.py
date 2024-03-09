@@ -1,2 +1,1 @@
-
-chars.sort()
+ns_arr[-1])
