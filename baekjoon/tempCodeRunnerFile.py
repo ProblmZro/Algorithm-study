@@ -1,1 +1,1 @@
-ns_arr[-1])
+[-3], ans_arr[-2], ans_arr[-1])
