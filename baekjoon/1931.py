@@ -1,24 +1,14 @@
 N = int(input())
-liq = sorted(list(map(int, input().split())))
 
-start, end = 0, N-1
-ans = abs(liq[start] + liq[end])
-ans_arr = [liq[start], liq[end]]
+time = [list(map(int, input().split())) for _ in range(N)]
+time.sort(key=lambda x: (x[1],x[0]))
 
-while start < end :
-  curr_sum = abs(liq[start] + liq[end])
+cnt = 1
+end = time[0][1]
 
-  if curr_sum < ans:
-    ans = curr_sum
-    ans_arr.append(liq[start])
-    ans_arr.append(liq[end])
-  
-  if ans == 0:
-    break
-  
-  if liq[start] + liq[end] > 0:
-    end -= 1
-  elif liq[start] + liq[end] < 0:
-    start += 1
+for i in range(1, N):  
+  if time[i][0] >= end:
+    cnt += 1
+    end = time[i][1]
 
-print(ans_arr[-2], ans_arr[-1])
+print(cnt)
