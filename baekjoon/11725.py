@@ -18,5 +18,6 @@ def DFS(n): # n이 부모
       DFS(i)
 DFS(1)
 
+print(graph)
 for i in range(2, len(visited)):
   print(visited[i])
