@@ -1,28 +1,33 @@
-import sys
-input = sys.stdin.readline
+arr = ""
+def ten_to_k(n, k):
+    global arr
+    if n == 0:
+        return 
+    ten_to_k(n//k, k)
+    arr+=str(n%k)
 
-M = int(input())
-N = int(input())
+def is_prime(n):
+    if n<=1:
+        return False
+    if n == 2 or n == 3:
+        return True
+    i = 2
+    for i in range(2, int(n**(1/2))+1) :
+      if(n % i == 0) :
+        return False
+    return True
 
-def isPrime(n) : 
-  if n == 1 :
-    return False
-  for i in range(2, int(n**(1/2))+1) :
-    if(n % i == 0) :
-      return False
-  return True
 
-sum = 0
-min = 10000
+def solution(n, k):
+    answer = 0
+    ten_to_k(n, k)
+    arr1 = arr.split('0')
+    print(arr1)
+    for i in arr1:
+        if i != ''and is_prime(int(i)):
+            answer += 1
+    return answer
 
-for i in range(M, N+1):
-  if isPrime(i) :
-    sum += i
-    if i < min : 
-      min = i
+arr = '00'
 
-if sum == 0 : 
-  print(-1)
-else : 
-  print(sum)
-  print(min)
+print(arr.split('0'))
