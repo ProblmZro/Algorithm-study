@@ -1,1 +1,2 @@
-conjecture is wrong.")
+
+    if i+1 < len(strn):
