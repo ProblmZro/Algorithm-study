@@ -5,7 +5,7 @@ for _ in range(int(input())):
   word_list = word.split(" ")
   for i in range(len(word_list)):
     if word_list[i][0].upper() not in shortcut:
-      shortcut.append(word_list[0][i].upper())
+      shortcut.append(word_list[i][0].upper())
       word_list[i] = "[" + word_list[i][0] + "]" + word_list[i][1:]
       Flag = True
       break
@@ -19,5 +19,4 @@ for _ in range(int(input())):
           break
       if Flag:
         break
-    
   print(' '.join(word_list))
