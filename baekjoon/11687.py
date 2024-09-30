@@ -2,12 +2,25 @@ import sys
 input = sys.stdin.readline
 
 M = int(input())
-m = 10**M
 
-for i in range(m//2):
-  k = 1
-  for j in range(i+1):
-    k *= j
-  if k//m < 10:
-    print(i)
-print(m)
+def count_zero(n):
+  res = 0
+  while n >= 5:
+    n //= 5
+    res += n
+  return res
+
+start, end = 0, 10**9
+res = -1
+while start <= end:
+  mid = (start + end) // 2
+  zero = count_zero(mid)
+  if zero == M:
+    res = mid
+    end = mid - 1
+  elif zero < M:
+    start = mid + 1
+  else:
+    end = mid - 1
+
+print(res)
