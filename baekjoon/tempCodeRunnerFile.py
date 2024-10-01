@@ -1,1 +1,1 @@
-map(int, input().split())
+i])
