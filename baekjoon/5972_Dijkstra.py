@@ -7,7 +7,8 @@ K = int(input())
 INF = int(1e8)
 
 graph = [[] for _ in range(V+1)]
-dist = [INF]*(V+1)
+dist = [INF] * (V+1)
+visited = [False] * (V+1)
 
 for _ in range(E):
   u, v, w = map(int, input().split())
@@ -21,8 +22,12 @@ def Dijkstra(start):
   while q:
     min_dist, min_idx = heapq.heappop(q)
 
-    if dist[min_idx] < min_dist:  # 이미 방문한 애
+    # if dist[min_idx] < min_dist:  # 이미 방문한 애
+    #   continue
+
+    if visited[min_idx]:
       continue
+    visited[min_idx] = True
 
     for i in graph[min_idx]:
       dist[i[0]] = min(min_dist + i[1], dist[i[0]])
