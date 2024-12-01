@@ -22,9 +22,6 @@ def Dijkstra(start):
   while q:
     min_dist, min_idx = heapq.heappop(q)
 
-    # if dist[min_idx] < min_dist:  # 이미 방문한 애
-    #   continue
-
     if visited[min_idx]:
       continue
     visited[min_idx] = True
