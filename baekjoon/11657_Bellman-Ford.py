@@ -6,7 +6,7 @@ def b_f(start):
   dist[start] = 0
   for i in range(N):
     for cur, next, cost in edges:
-      if dist[next] > dist[cur] + cost:
+      if dist[cur] != INF and dist[next] > dist[cur] + cost:
         dist[next] = dist[cur] + cost
         if i == N - 1:
           return True
