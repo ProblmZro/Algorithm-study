@@ -1,1 +1,1 @@
-print
+num_arr
