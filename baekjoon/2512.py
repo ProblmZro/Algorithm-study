@@ -18,4 +18,4 @@ while start <= end:
     res = mid
     start = mid + 1
 
-print(res)
+print(mid)
