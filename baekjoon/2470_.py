@@ -16,8 +16,3 @@ while start < end:
     start += 1
 
 print(a, b)
-
-
-# -5 -3 2 3
-
-# 5 2
