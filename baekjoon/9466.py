@@ -1,13 +1,6 @@
-# for _ in range(int(input())):
-#   n = int(input())
-#   stdt_n = [0] + list(map(int, input().split()))
-#   graph = [[] for _ in range(n+1)]
-#   print(stdt_n)
-#   print(graph)
-#   for i in range(1, n+1):
-#     graph[i].append(stdt_n[i])
-#     graph[stdt_n[i]].append(i)
-#   print(graph)
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(10**6)
 
 def dfs(v):
   global res
