@@ -21,7 +21,7 @@ for k in range(1, n+1):
         trace[a][b] = trace[k][b]
 
 for i in range(1, len(graph)):
-  print(*graph[i][1:])
+  print(*[0 if x == INF else x for x in graph[i][1:]])
 
 for i in range(1, n+1):
   for j in range(1, n+1):
