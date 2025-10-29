@@ -1,3 +1,7 @@
+import sys
+sys.setrecursionlimit(10 ** 8)
+input = sys.stdin.readline
+
 M, N = map(int, input().split())
 graph = []
 for _ in range(M):
